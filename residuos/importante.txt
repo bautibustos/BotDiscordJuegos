@@ -1,0 +1,2 @@
+https://www.cheapshark.com/api/1.0/stores
+https://apidocs.cheapshark.com/
