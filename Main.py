@@ -46,6 +46,10 @@ async def ping(ctx):
 	p2=(str(p1).split('.'))[0]#para escribir nomas
 	await m.edit(content=f'Pong! (ms={p2})')
 
+@bot.command(name="ip")
+async def ping(ctx):
+	await ctx.send(ApiRequest.ReqIP())
+
 @bot.command(name="juegos")
 async def juegos(ctx):
 	print(ctx.channel.id)

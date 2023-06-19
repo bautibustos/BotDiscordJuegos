@@ -57,3 +57,8 @@ def mandojuego():
 		string = str(juego['']); string = string.replace("{", ""); string = string.replace("}", ""); string = string.replace("[", ""); string = string.replace("]", ""); string = string.replace("id°", "\n"); string = string.replace("'", ""); string = string.replace(":", ""); string = string.replace(",", ""); string = string.replace("°°", ":"); string = string.replace("Giveaway", "")
 		#
 	return string
+
+def ReqIP():
+    consulta = requests.get ('https://api.ipify.org/?format=json')
+    return consulta['ip']
+    
